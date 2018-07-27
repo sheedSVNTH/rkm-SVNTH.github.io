@@ -1,0 +1,263 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    display: none;
+}
+
+
+nav ul a{
+    display:block;
+    background:#0d1317;
+    padding: 15px;
+	margin-top: 5px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: ghostwhite; /*#ad343e; */
+    transition: color 2s ease, background 2s ease, padding 2s ease;
+}
+
+nav ul a:hover{
+    background: #474747;
+    color: chartreuse;
+    padding-left: 30px;
+    
+}
+
+.nav-container img{
+    width: 200px;
+    align-self: center;
+}
+
+.nav-container{
+    padding: 2px 0px 0px 10px;
+    background: #474747; /**#0d1317 **/
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    min-height: 15vh;
+}
+
+nav{
+    flex: 0 0 auto;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+@media screen and (min-width:776px){
+    .nav-containter{
+        display: none;
+    }
+    nav ul{
+        display: flex!important;
+        flex-wrap:wrap;
+        justify-content: center;
+        background: rgba(13,19,23,0.8);
+    }
+    nav ul a{
+        background: transparent;
+    }
+    nav ul a:hover{
+        background: transparent;
+        padding-left: 20px;
+    }
+}
+
+
+/** START of Level Title SECTION **/
+
+.titles{
+    padding: 0 0 20px 0;
+    background: white;/*#f5f3f5;*/
+}
+
+.title h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.title-underline{
+    background: chartreuse;
+    width: 100px;
+    height: 4px;
+    margin: 10px auto;
+}
+
+.title{
+    padding: 20px 0;
+}
+/** End of Title Section **/
+
+/**FAQ SECTION STYLING**/
+#read {
+color: black;
+text-align: center;
+}
+
+#faq-parent{
+	display: inline-block
+}
+
+#faq-section{
+    min-height: 90vh;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0.2)),url(../img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.faq-center{
+	color:white;
+	margin: 15px 50px 15px 50px;
+}
+
+.faq-text h3{
+    text-transform: uppercase;
+	padding-top: 10px; 
+	padding-bottom: 7px;
+	text-align: left; 
+}
+
+.faq-text p{
+    line-height: 1.5;
+    margin-top: 5px;
+	font-size: 20px;
+	font-weight: 200;
+	font-family: sans-serif;
+	padding-bottom: 5px; 
+	width: 70%;
+}
+
+#size-chart{
+	width: 0%;
+	margin: 20px 20px;
+}
+#border {
+	margin-top: 10px;
+	margin-bottom: 40px; 
+    border-bottom: 1px solid white; 
+	width: 70%;
+}
+
+.contact-title h2{
+	font-size: 40px;
+    text-transform: uppercase;
+	color:ghostwhite;
+	text-align: center; 
+}
+
+.contact-card {
+	display: flex;
+	justify-content: center;  
+	align-items: center; 
+}
+
+form {
+	flex: 0 0 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center; 
+}
+form input{
+	padding: 5px 5px; 
+	margin: 10px 0;
+	width: 300px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 400;
+	border: 2px solid lightgray;  
+}
+
+form textarea {
+	padding: 5px 5px; 
+	margin: 10px 0;
+	width: 400px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 400;
+	border: 2px solid lightgray;
+}
+
+form input:hover, textarea:hover {
+	border: 2px solid chartreuse; 
+}
+
+form button{
+	color: white;
+	background-color: gray; 
+	padding: 5px 2px;
+	font-size: 20px;
+	text-transform: uppercase;
+	border: 1px solid white; 
+}
+
+form button:hover{
+	color: chartreuse;
+
+}
+@media screen and (min-width:576px){
+    .faq-center{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 776px){
+    .faq-center{
+        width: 100%;
+    }
+}
+
+
+/** END OF Levels Section **/
+
+/* START of FILLER SECTION */
+
+.filler{
+    min-height: 60vh;
+    background: url(../img/about.jpg)center/cover
+    fixed no-repeat;
+}
+
+/* END OF FILLER SECTION*/
+
+/* START of FOOTER */
+.footer-icons{
+    padding: 20px;
+	background: #474747;
+}
+
+.footer-icons a{
+    display: inline-block;
+    font-size: 30px;
+    background: black;
+    padding: 5px 10px;
+	margin-bottom: 10px;
+    border-radius: 50%;
+    color: ghostwhite;
+}
+
+.footer-icons a:hover{
+    color: chartreuse;
+}
+/* END of FOOTER */

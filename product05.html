@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Seventh Level Apparel - Sports Tanktop</title>
+    <link rel="stylesheet" href="css/shirt.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="js/fontawesome-all.js"></script>
+</head>
+	
+<body>
+    
+<header>
+    <nav>
+        <div class="nav-container">
+            <img src="img/logo.png" alt="img">
+			
+			<ul>
+            	<li><a href="index.html">HOME</a></li>
+				<li><a href="store.html">STORE</a></li>
+            	<li><a href="levels.html">LEVELS</a></li>
+				<li><a href="blog.html">WISDOM BLOG</a></li>
+				<li><a href="contact.html">FAQ/CONTACT</a></li>
+				<li><a href="cart.html">CART</a></li>
+        	</ul>
+    	</div>
+	</nav>
+</header>
+	
+<!-- PRODUCTS SECTION -->
+<section class="product">
+	<div class="top-container"> 
+		<div class = "img-main">
+			<img id = "img" src="img/product05.jpg" alt="product">
+		</div> 
+		<div class="product-input">
+			<h3>Sports Tanktop: Red/Black</h3>
+			<div id = "cartPrice" value = "23.99"> 
+				<p id = "full-price">$25.99</p> 
+				<p id = "productPrice">$23.99</p>
+			</div>
+		 <div class="form-group">
+			 <h5>Size</h5>
+			 <select class="form-control" id="productSize">
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="Large">Large</option>
+				<option value="X-Large">X-Large</option>
+			 </select>
+  			</div>
+			
+			<div class="form-group">
+			<h5>Quantity </h5>
+			<select class="form-control" id="productQty">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			 </select>
+			</div>
+			
+ 			<input id="productId" type="hidden" name="product_id" value="product05">	
+			
+			<div>
+			<button id="addCart">Add to Cart</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "section-div"></div>
+    <div class = "product-prev">
+		<div class = "indiv-img">
+			<img onclick="photoChange('product05')" id ="img-front" src="img/product05.jpg" alt="product"> 
+		</div>
+		<div class = "indiv-img">
+				<img onclick="photoChange('product05-02')" id ="img-back" src="img/product05-02.jpg" alt="product"> 
+		</div>
+		<div class = "indiv-img">
+			<img onclick="photoChange('product05-03')" id ="img-mod-front" src="img/product05-03.jpg" alt="product">
+		</div>
+    </div>
+
+<div class="product-desc">
+		<h3>Product Details</h3>
+		<p>Performance fabric blend of premium cotton and spandex; provides flexible fit and dries quickly.
+		<br>Fulfillment badge on front in Charcoal and Black Colors.  Upper back features <em>"Seventh Level"</em> with Fulfillment icon.</p>
+		<h3>Sizing/Fit</h3>
+		<p>Tank has been designed with slim, athletic fit to accentuate physique.  For a looser, "relaxed" fit, we 			recommend ordering (1) size up above your “True Size.”</p>
+		<h3>Product Care</h3>
+		<p>We recommend the following washing instructions to extend the life cycle of this product:
+        	Machine wash cold and hang dry to minimize shrinkage. To preserve paint graphics, wash inside out.</p>
+	</div>
+</section>
+	
+<!-- END OF PRODUCTS SECTION -->
+    
+<!-- FOOTER SECTION -->
+
+<footer>
+  <div class="footer-icons">
+            <a href="https://www.facebook.com/SVNTHapparel"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/seventh_level_apparel/"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest-p"></i></a>  
+  <p>Copyright&copy; Seventh Level Apparel.All rights reserved. 2016-2018</p>
+</div>
+    
+</footer>
+
+<!-- END OF FOOTER SECTION -->    
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/addCart.js"></script>
+</body>
+</html>

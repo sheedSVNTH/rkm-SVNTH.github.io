@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Seventh Level Apparel - Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+<script src="js/fontawesome-all.js"></script>
+</head>
+<body>
+	
+<header>
+    <nav>
+        <div class="nav-container">
+            <img src="img/logo.png" alt="img">
+
+		<ul>
+            <li><a href="index.html">HOME</a></li>
+			<li><a href="store.html">STORE</a></li>
+            <li><a href="levels.html">LEVELS</a></li>
+            <li><a href="blog.html">WISDOM BLOG</a></li>
+            <li><a href="contact.html">FAQ/CONTACT</a></li>
+			<li><a href="cart.html">CART</a></li>
+        </ul>
+			
+        </div>  
+    </nav>
+    
+</header>
+	
+<!-- TITLE SECTION -->
+<section class="titles">
+	<div class="title">
+    	<h2>Checkout</h2>
+    	<div class="title-underline"></div>
+	</div>    
+</section>
+
+<section class="checkout-section">
+	<div class ="checkout-container">
+    	<div class="checkoutColumn">
+			
+			<!-- PERSONAL INFO (NAME / EMAIL) -->
+			<div id = "personal-info">
+				<h4>Your Information</h4>
+				<div class="divider-line"></div>
+				<h4 id= "required">* Indicates Required Field</h4>
+				<div class ="name-grandparent">
+					<div class = "name-parent">
+						<h5>First Name *</h5>
+						<input type="text" id="firstName" placeholder="First Name" autocomplete="foo">
+					</div>
+					<div class = "name-parent">
+					<h5>Last Name *</h5>
+					<input type="text" id="lastName" placeholder="Last Name" autocomplete="foo">
+					</div>
+				</div>
+					<h5>E-mail *</h5>
+					<input type="text" id="email" placeholder="Enter E-mail" autocomplete="foo">
+			</div>
+			<!-- SHIPPING ADDRESS -->	
+			<h4>Shipping Information</h4>
+			<div class="divider-line"></div>
+			<div id = "shipping-info">
+				<h5>Address Line 1 *</h5>
+				<input type="text" id="Address1" placeholder="Address Line 1" autocomplete="foo"><br>
+				<h5>Address Line 2</h5>
+				<input type="text" id="Address2" placeholder="Ex. Unit 101 or APT A-1" autocomplete="foo"><br>
+				<h5>City *</h5>
+				<input type="text" id="city" placeholder="City" autocomplete="foo"><br>
+				<div class ="name-grandparent">
+					<div class = "name-parent">
+						<h5>State *</h5>
+						<input type="text" id="state" placeholder="State" autocomplete="foo">
+					</div>
+					<div class = "name-parent">
+					<h5>Zip Code *</h5>
+					<input type="text" id="zip" placeholder="Zip Code" autocomplete="foo">	<br>
+					</div>
+				</div>
+				<h5>Country *</h5>
+				<input type="text" id="country" placeholder="Country" autocomplete="foo">
+			</div>
+			<div id ="shipping-info-complete">
+			<!--
+				<button id ="editShipInfo">Edit</button>
+				<h5>Name</h5>
+				<h5>E-mail</h5>
+				<h5>Address Line 1</h5>
+				<h5>Address Line 2</h5>
+				<h5>City, State Zip</h5>
+				<h5>Country</h5>
+			-->
+			</div>
+			
+			<!-- SHIPPING OPTION DROPDOWN MENU-->
+			<button id= "shipMethod" class="collapsible">Shipping Method</button>
+			<div id = "shipOption" class="content">
+				<h5>Shipping Options</h5>
+				<select id ="shipMethodSelect">
+					<option id="selectInstruct" value="0">--SELECT OPTION--</option>
+					<option id="firstClass" value="1">First Class (2-3 day Shipping) $4.00</option>
+				    <option id ="overnight" value="2">Over-night (1 day Shipping) $10.00</option>
+				</select>
+			</div>
+			<div id = "shipMethodComplete">
+				<button id ="changeShipMethod">Edit</button>
+				<!--
+				<h5>Selected Shipping Method</h5>
+				-->
+			</div>
+			
+			<!-- DISCOUNT & CREDIT CARD-->	
+			<button id ="payment-btn" class="collapsible">Payment Method</button>
+			<div class="content">
+				<div id="card-info">
+				<div class="divider-line"></div>
+				<h5>Discount Code</h5>
+					<div class = "name-grandparent">
+						<input type="text" id="discountCode" placeholder="Enter Discount Code, If Applicable" autocomplete="foo">
+						<button id ="applyCode">APPLY</button>
+					</div>
+				
+				<div class ="name-grandparent">
+					<div class = "name-parent">
+						<h5>Card Type</h5>
+						<select id ="cardType">
+							<option id="selectInstruct" value="0">--SELECT CARD TYPE--</option>
+							<option id="amex" value="1">American Express</option>
+							<option id="discover" value="2">Discover</option>
+							<option id="mastercard" value="3">MasterCard</option>
+							<option id="visa" value="4">Visa</option>
+						</select>
+					</div>
+					
+					<div class = "name-parent">
+						<h5>Card Number</h5>
+						<input type="text" id="cardNum" placeholder="1111222233334444" autocomplete="foo"><br>
+					</div>
+				</div>
+				
+				<div class ="name-grandparent">
+						<div class = "name-parent">
+							<h5>Expiration Date</h5>
+							<input type="text" id="cardEXP" 		placeholder="MMYY" autocomplete="foo">
+						</div>
+					
+					<div class = "name-parent">
+						<h5>CVV</h5>
+						<input type="text" id="cardCVV" placeholder="123" autocomplete='foo'><br>
+					</div>
+				</div>
+				<button id ="validateCC">VALIDATE</button><br>
+					</div>
+				<div id ="card-info-complete">
+					<!--
+					<button id ="editCardInfo">Edit</button>
+					<h5>Card Name ending in XXXX.</h5>
+					<h5>Exp. MM/YEAR</h5>
+					-->
+				</div>
+			<!-- BILLING ADDRESS -->	
+				<div id ="billAddWrap"> 
+					<h4>Billing Address</h4>
+					<div class="divider-line"></div>
+					<input type="checkbox" id="billing-check" name="option" /><label for ="billing-check">Same as Shipping Address</label>
+				
+			<!-- BILLING ADDRESS input displayed only if checkbox is Unchecked -->
+				<div id= "billingSection"> 
+					<div id = "billSectionChild">
+						<h5>Address Line 1 *</h5>
+						<input type="text" id="billAddress1" placeholder="Address Line 1" autocomplete="foo"><br>
+						<h5>Address Line 2</h5>
+						<input type="text" id="billAddress2" placeholder="Ex. Unit 101 or APT A-1" autocomplete="foo"><br>
+						<h5>City *</h5>
+						<input type="text" id="billCity" placeholder="City" autocomplete="foo"><br>
+				
+						<div class ="name-grandparent">
+							<div class = "name-parent">
+								<h5>State *</h5>
+								<input type="text" id="billState" placeholder="State" autocomplete="foo">
+							</div>
+							<div class = "name-parent">
+								<h5>Zip Code *</h5>
+								<input type="text" id="billZip" placeholder="Zip Code" autocomplete="foo"><br>
+							</div>
+						</div>
+						<h5>Country *</h5>
+						<input type="text" id="billCountry" placeholder="Country" autocomplete="foo">
+					</div>
+				</div>
+					
+			</div>
+		</div>
+			<div id ="billing-info-complete">
+				<!--DOM TEMPLATE
+				<button id ="editBillInfo">Edit</button>
+				<h5>Name</h5>
+				<h5>E-mail</h5>
+				<h5>Address Line 1</h5>
+				<h5>Address Line 2</h5>
+				<h5>City, State Zip</h5>
+				<h5>Country</h5> 
+				-->
+		</div>
+			
+			<button id ="review-end" class="collapsible">Review Order and Submit</button>
+			<div class="content">
+				<div class="divider-line"></div>
+				<h5>Please confirm all information provided is correct.</h5>
+				<button id ="submitOrder">Submit Order</button>
+			</div>
+			
+		</div>
+		
+		<!-- Start of Order Summary Column Section -->
+		<div class="orderSum-Column">
+			<div class = "orderSum-container">
+			<h4>Order Summary</h4>
+			<div id ="order-container" class="divider-line"></div><br>
+					<div class="productLine">
+					</div>
+						<!--DOM TEMPLATE
+						<img src ="img/product01.jpg" alt = profile>
+						<div id = "productName">
+							<p>Performance T-shirt: Blue</p>
+							<p>Size</p>
+							<p>Quantity</p>
+						</div>
+						<p>Price</p> -->
+
+					<div class="orderBreakdown">
+							<div class="divider-line"></div><br>
+							<p id = "subtotal">Subtotal: </p>
+							<p id = "shippingCost">Shipping Cost: </p>
+							<p id = "taxes">Taxes: </p>
+						<div class="divider-line"></div>
+						<h4 id = "orderTotal"> Order Total: </h4>
+						<div class="divider-line"></div>
+						<p id = "save-note"></p>
+					</div>
+			</div>
+		</div>
+		<!-- End of Order Summary Column Section -->
+	</div>
+	
+</section>
+<!-- End of CHECKOUT Section-->
+	
+	<!-- Start of Order Complete Alert Section-->
+	
+	<div id="dialogOverlay"></div>
+	<div id="dialogBox">
+		<div id="dbBody">
+			<div class="title">
+    		<h2 id = "orderConf">Order Complete!</h2>
+			<div id = "underline" class="title-underline"></div>
+				<p>We can't wait for you to get your item(s) and will prep for shipping as soon as possible.   You will receive a confirmation e-mail at the address provided. </p><br><p>Be sure to tune into our social communty for new releases and updates.</p><h2 id = "welcome">Welcome to Seventh Level!</h2>
+			</div>  
+		</div>
+		<div id="dbFooter">
+			<button id = "okClick">OK</button>
+		</div>
+	</div>
+	<!-- END Of Order Complete Alert Section-->
+	
+<!-- FILLER SECTION -->
+<section class="filler"></section>
+<!-- END FILLER SECTION -->
+
+<!-- FOOTER SECTION -->
+<footer>
+  <div class="footer-icons">
+            <a href="https://www.facebook.com/SVNTHapparel"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/seventh_level_apparel/"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest-p"></i></a> 
+	 <p>Copyright&copy;, Seventh Level Apparel. All rights reserved. 2016-2018</p>
+  </div>
+</footer>
+<!-- END OF FOOTER SECTION -->    
+	
+	<script src = "js/checkout.js"></script>
+	
+</body>
+</html>

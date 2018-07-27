@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    display: none;
+}
+
+nav ul a{
+    display:block;
+    background:#0d1317; 
+    padding: 15px;
+	margin-top: 5px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: ghostwhite; /*#ad343e; */
+    transition: color 2s ease, background 2s ease, padding 2s ease;
+}
+
+nav ul a:hover{
+    background: #474747;
+    color: chartreuse;
+    padding-left: 30px;
+    
+}
+
+.nav-container img{
+    width: 200px;
+    align-self: center;
+}
+
+.nav-container{
+    padding: 2px 0px 0px 10px;
+    background: #474747; /**#0d1317 **/
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+	min-height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0.2)),url(../img/navcopy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;    
+}
+
+nav{
+    flex: 0 0 auto;
+}
+
+.banner{
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h3{
+    text-transform: uppercase;
+    font-size: 50px;
+	font-weight: 400;
+    color: floralwhite;
+	margin-top: 15px;
+}
+
+.banner h1{
+    padding-top: 10px;
+	font-size: 22px;
+	font-weight: 500;
+    text-transform: capitalize;
+    color:floralwhite;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+@media screen and (min-width:776px){
+    .nav-containter{
+        display: none;
+    }
+    nav ul{
+        display: flex!important;
+        flex-wrap:wrap;
+        justify-content: center;
+        background: rgba(13,19,23,0.8);
+    }
+    nav ul a{
+        background: transparent;
+    }
+    nav ul a:hover{
+        background: transparent;
+        padding-left: 20px;
+    }
+}
+
+
+/** START of PRODUCTS SECTION **/
+
+.products{
+    padding: 0 0 100px 0;
+    background: white;/*#f5f3f5;*/
+}
+
+.title h2{
+    font-size: 40px;
+	font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.title-underline{
+    background: chartreuse;
+    width: 100px;
+    height: 4px;
+    margin: 10px auto;
+}
+
+.title ul {
+	text-align: center;
+}
+.title ul a{
+    font-size: 25px;
+	font-weight: 300;
+	font-stretch: extra-condensed;
+	color: black; 
+    text-transform: uppercase;
+	text-decoration: none;
+}
+.title ul a:hover{
+	color: chartreuse; 
+	font-style: bold;
+	font-weight: 600;
+
+}
+.title{
+    padding: 50px 0;
+}
+
+.product{
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+}
+
+.products img{
+    width: 100%;
+    display:block;
+    transition:opacity 2s ease,transform 2s ease;
+}
+
+.products img:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.05); /** Value over 1.0 will zoom-in**/
+}
+
+.products-center {
+	text-align: center;
+}
+
+@media screen and (min-width:576px){
+    .products-center{
+        display: grid; /*no vendor prefix included */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:992px){
+    .products-center{
+        display: grid; /*no vendor prefix included */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/** END OF PRODUCTS SECTION **/
+
+
+/** START of ABOUT US SECTION **/
+.about{
+    min-height: 75vh;
+    padding: 50px 0;
+    background: url(../img/about.jpg)center/cover
+    fixed no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card{
+    background: rgba(0,0,0,0.2);
+    text-align: center; 
+    padding: 10px 10px;
+}
+.about-card h3{
+    font-size: 40px;
+	font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.about-card p{
+    line-height: 1.4;
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 17px;
+}
+
+@media screen and (min-width:776px){
+    .about-card{
+        max-width: 50%;
+        border-radius: 10px;
+    }
+    .about-card p{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* END OF ABOUT US SECTION */
+
+/* START of FILLER SECTION */
+
+/* END OF FILLER SECTION*/
+
+/* START of FOOTER */
+.footer-icons{
+    padding: 20px; 
+	background: #474747;
+}
+
+.footer-icons a{
+    display: inline-block;
+    font-size: 30px;
+    background: black;
+    padding: 5px 10px;
+	margin-bottom: 10px;
+    border-radius: 50%;
+    color: ghostwhite;
+}
+
+.footer-icons a:hover{
+    color: chartreuse;
+}
